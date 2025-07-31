@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.trev0r.waterdeliveryapp"
     },
     "web": {
       "favicon": "./assets/favicon.png",
