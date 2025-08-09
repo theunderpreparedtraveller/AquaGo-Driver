@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Water Delivery App",
+    "name": "AquaGo Delivery",
     "slug": "water-delivery-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "in.aquago.delivery"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -29,7 +30,20 @@
     },
     "scheme": "water-delivery-app",
     "plugins": [
-      "expo-font"
-    ]
+      "expo-font",
+      [
+        "@sentry/react-native/expo",
+        {
+          "url": "https://sentry.io/",
+          "project": "react-native",
+          "organization": "aqua-td"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "bd76a349-9b00-4935-b652-64da5161e02e"
+      }
+    }
   }
 }
